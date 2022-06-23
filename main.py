@@ -1,14 +1,15 @@
-from connect import upload
+from connect import upload, download
 
 
 def main():
 
-    file = '/Users/kaznado/Development/PyCharmProjects/simple-server-upload/test.txt'
+    #file = '/Users/kaznado/Development/PyCharmProjects/simple-server-upload/test.txt'
+    file = '/home/ubuntu/Kaz/Transfer/test2.txt'
     try:
-        upload(file)
-        print('Upload Success')
+        download(file)
+        print('Download Success')
     except Exception as e:
-        print('Upload Failed')
+        print('Download Failed')
         print(e)
 
 
